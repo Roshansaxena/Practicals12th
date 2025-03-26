@@ -1,0 +1,52 @@
+<!Doctype html>
+<html>
+<head>
+<title>Event Driven Client Side script</title>
+</head>
+<body OnLoad=n1(); OnUnLoad=message();>
+<h3 align="center"> Different & visibly distinct background colors</h3>
+<script type="text/Javascript">
+function message()
+{
+ alert("Display of 7 different colors");
+}
+function n1()
+{
+ document.bgColor="yellow";
+window.setTimeout("n2()",1500);
+}
+function n2()
+{
+ document.bgColor="red";
+window.setTimeout("n3()",1500);
+}
+
+function n3()
+{
+ document.bgColor="green";
+window.setTimeout("n4()",1500);
+}function n4()
+{
+ document.bgColor="blue";
+window.setTimeout("n5()",1500);
+}
+function n5()
+{
+ document.bgColor="cyan";
+window.setTimeout("n6()",1500);
+}
+
+function n6()
+{
+ document.bgColor="pink";
+window.setTimeout("n7()",1500);
+}
+function n7()
+{
+ document.bgColor="grey";
+window.setTimeout("n1()",1500);
+}
+</script>
+</body>
+</html>
+

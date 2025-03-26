@@ -1,0 +1,34 @@
+<!Doctype html>
+<html>
+<head>
+<title>Palindrome</title>
+</head>
+<body>
+<form name="f1">
+Enter your string:<Input type="Text" name="t1"><br><br>
+<input type="submit" name="b1" value="Check Palindrome" onClick="chk()">
+</form>
+<script type="text/Javascript">
+function chk()
+{
+var a,s,i,n;
+a=f1.t1.value;
+s=a.toLowerCase();
+n=s.length;
+var p=1;
+for(i=0;i<n/2;i++)
+{
+if(s.charAt(i)!=s.charAt(n-1-i))
+{
+p=0;
+break;
+}
+}
+if(p==1)
+alert("String is Palindrome");
+else
+alert("String is not a Palindrome");
+}
+</script>
+</body>
+</html>
