@@ -1,1 +1,0 @@
-# Practicals 12th
